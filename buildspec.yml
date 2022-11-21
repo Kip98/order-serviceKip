@@ -7,15 +7,17 @@
     commands:
         - echo Entred the build phase
        
-       - mvn clean package
+        - mvn test
         
     post_build: 
       commands: 
       
           - echo build completed successfully
+          - mvn package
           
     artifacts: 
-    
+    files:
+  
             - target/order-serviceKip.jar
             
     discard-paths: yes
