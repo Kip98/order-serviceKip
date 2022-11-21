@@ -12,6 +12,6 @@
           - echo build completed successfully
           
     artifacts: 
-       - target/test.jar
+       - target/order-serviceKip.jar
     discard-paths: yes
   
